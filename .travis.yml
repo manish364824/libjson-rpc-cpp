@@ -45,6 +45,7 @@ matrix:
       arch: ppc64le
       os: linux
     - env: OS=ubuntu1804
+      arch ppc64le
       os: linux
 
 script:
