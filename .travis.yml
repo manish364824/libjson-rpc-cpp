@@ -28,6 +28,24 @@ matrix:
     - env: OS=osx
       os: osx
       compiler: clang
+      
+    - env: OS=fedora 
+      arch: ppc64le
+      os: linux
+    - env: OS=arch
+      arch: ppc64le
+      os: linux
+    - env: OS=debian9
+      arch: ppc64le
+      os: linux
+    - env: OS=debian10
+      arch: ppc64le
+      os: linux
+    - env: OS=ubuntu1604
+      arch: ppc64le
+      os: linux
+    - env: OS=ubuntu1804
+      os: linux
 
 script:
     - cd docker && make ${OS};
